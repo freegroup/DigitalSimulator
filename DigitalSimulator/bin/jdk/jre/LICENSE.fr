@@ -1,0 +1,190 @@
+Sun Microsystems, Inc.
+Contrat de licence code objet
+
+VEUILLEZ LIRE ATTENTIVEMENT LES DISPOSITIONS DU PRESENT CONTRAT ET 
+DE TOUTE DISPOSITION SUSCEPTIBLE DE LES COMPLETER (COLLECTIVEMENT 
+DESIGNEES PAR LE "CONTRAT") AVANT D'OUVRIR L’EMBALLAGE CONTENANT 
+LE SUPPORT DU LOGICIEL. PAR L'OUVERTURE DE CET EMBALLAGE, VOUS 
+ACCEPTEZ LES DISPOSITIONS DU PRESENT CONTRAT. SI VOUS ACCEDEZ AU 
+LOGICIEL ELECTRONIQUEMENT, VOUS DEVEZ MANIFESTER VOTRE 
+ACCEPTATION DES DISPOSITIONS DU PRESENT CONTRAT EN CLIQUANT SUR LE 
+BOUTON "ACCEPTER" FIGURANT AU BAS DU PRESENT CONTRAT. SI VOUS 
+N'ACCEPTEZ PAS TOUTES LES DISPOSITIONS DES PRESENTES, VOUS DEVEZ 
+RETOURNER IMMEDIATEMENT LE LOGICIEL INUTILISE A VOTRE REVENDEUR 
+AFIN D'EN OBTENIR LE REMBOURSEMENT OU, SI VOUS ACCEDEZ AU LOGICIEL 
+ELECTRONIQUEMENT, VOUS DEVEZ CLIQUER SUR LE BOUTON "REFUSER" 
+FIGURANT AU BAS DU PRESENT CONTRAT ET LA PROCEDURE D’INSTALLATION 
+SERA INTERROMPUE.
+
+1. Licence d'utilisation. Sun Microsystems, Inc. ("Sun") vous concède en vertu du présent 
+Contrat une licence non exclusive et non transférable d’utilisation du logiciel, de sa 
+documentation ainsi que de toute correction d’erreurs fournie par Sun (collectivement 
+désignés le "Logiciel "), pour vos seuls besoins propres et pour le nombre d'utilisateurs et le 
+type d'ordinateur correspondant à la redevance de licence qui a été payée.
+
+2. Limitations. Le Logiciel est de nature confidentielle et est protégé par le droit d’auteur. Le 
+Logiciel et tous les droits de propriété intellectuelle qui y sont attachés demeurent la 
+propriété de Sun et/ou de ses concédants. Sauf dispositions expresses contraires des 
+Dispositions Additionnelles, vous n'êtes pas autorisé à faire des copies du Logiciel à 
+l’exception d’une copie de sauvegarde. Sous réserve de la loi applicable, vous n’êtes pas 
+autorisé à modifier et à décompiler le Logiciel ou à effectuer de l'ingénierie inverse. Vous 
+reconnaissez que le Logiciel n'a pas été conçu, concédé sous licence, ni destiné pour être 
+utilisé pour la conception, la construction, l'exploitation ou la maintenance d'installations 
+nucléaires. Sun ne fournit aucune garantie, expresse ou tacite, quant à la convenance du 
+Logiciel pour un tel usage. Aucun droit, titre ou intérêt quel qu'il soit, concernant toute 
+marque commerciale, marque de service, logo ou nom commercial de Sun ou de ses 
+concédants n'est concédé en vertu du présent Contrat. 
+
+3. Limitation de Garantie. Sous réserve d'une utilisation normale du Logiciel, Sun garantit, 
+sur présentation d’une preuve d'achat, durant une période de quatre-vingt dix (90) jours à 
+compter de sa date d'acquisition, que le support sur lequel le Logiciel est fourni (le cas 
+échéant) est exempt de tout vice de matière et de fabrication. A l'exception de la garantie qui 
+précède, le Logiciel est fourni "en l'état". La seule indemnité et la seule responsabilité de Sun 
+au titre de la présente garantie se limitent, au choix de Sun, au remplacement du support du 
+Logiciel ou au remboursement de la redevance de licence versée pour le Logiciel.
+
+4. EXCLUSION DE GARANTIE. SAUF DISPOSITION CONTRAIRE DU PRESENT 
+CONTRAT, TOUTES GARANTIES EXPRESSES OU IMPLICITES, NOTAMMENT 
+TOUTE GARANTIE IMPLICITE DE QUALITE MARCHANDE, DE CONVENANCE A 
+UN USAGE PARTICULIER OU DE NON-CONTREFACON SONT EXCLUES, SAUF 
+DANS LA MESURE OU DE TELLES EXCLUSIONS  NE SONT PAS AUTORISEES 
+PAR LA LOI.
+
+5. LIMITATION DE RESPONSABILITE. DANS LES LIMITES AUTORISEES PAR LA 
+LOI, SUN OU SES CONCEDANTS NE POURRONT EN AUCUN CAS ETRE 
+RESPONSABLES DE TOUTE PERTE DE REVENUS, PERTE DE PROFITS OU PERTE 
+DE DONNEES, NI DE TOUT DOMMAGE SPECIAL, INCIDENT, INDIRECT OU 
+CONSECUTIF OU PUNITIFS, QUELLE QUE SOIT LA CAUSE ET LE FONDEMENT 
+DE LA RESPONSABILITE, RESULTANT DE L'UTILISATION OU DE 
+L'IMPOSSIBILITE D'UTILISER LE LOGICIEL, Y COMPRIS LORSQUE SUN AVAIT 
+CONNAISSANCE DE L'EVENTUALITE DE TELS DOMMAGES. Dans tous les cas, la 
+responsabilité de Sun à votre égard, qu'elle soit de nature contractuelle, délictuelle ou autre, 
+ne pourra excéder le montant payé, ou en l’absence de paiement, le montant dû en vertu du 
+présent Contrat. Les limitations stipulées ci-dessus s’appliquent même en cas de non-respect 
+de l'objet principal de la garantie mentionnée ci-dessus.
+
+6. Résiliation. Le présent Contrat reste en vigueur jusqu'à sa date de résiliation. Vous pouvez, à 
+tout moment, résilier le présent Contrat en détruisant toutes les copies du Logiciel. Le présent 
+Contrat sera résilié par Sun, de plein droit et sans mise en demeure préalable, en cas de non 
+respect de votre part d’une quelconque disposition du présent Contrat. A compter de la 
+résiliation du présent Contrat, vous êtes tenu de détruire toutes les copies du Logiciel.
+
+7. Dispositions applicables à l'exportation. Tout Logiciel et données techniques livrés dans le 
+cadre du présent Contrat sont soumis à la législation des États-Unis sur le contrôle des 
+exportations, et peuvent également être soumis aux lois d'autres pays relatives à l'importation 
+et à l'exportation. Vous vous engagez à respecter strictement ces lois et reconnaissez qu'il 
+vous appartient d'obtenir toutes les licences nécessaires en vue de l'exportation, de la 
+réexportation ou de l'importation  de ces Logiciels et données techniques après leur livraison.
+
+8. Droits limités de l’Administration américaine. Conformément aux dispositions 48 C.F.R. 
+227.7202-4 (acquisitions du Ministère de la Défense(DOD)) et aux dispositions 48 C.F.R. 
+2.101 et 12.212 (acquisitions non DOD), si le Logiciel a été acquis par une Administration 
+américaine, pour le compte ou par un de ses fournisseurs ou sous-traitants (à tout niveau), les 
+droits le l’Administration sur le Logiciel et sa documentation seront uniquement ceux 
+stipulés dans le présent Contrat.
+
+9. Loi Applicable. Tout litige relatif au présent Contrat est soumis à la loi de l'État de 
+Californie et à la réglementation fédérale américaine applicable. Aucune règle de conflit de 
+loi ne sera applicable.
+
+10. Non validité partielle. Si l'une quelconque des dispositions du présent Contrat est nulle ou 
+inopposable, le Contrat demeurera applicable, à l'exception de cette disposition. Toutefois, si 
+la nullité ou l'inopposabilité de cette disposition était contraire à l’intention des parties, ce 
+Contrat serait alors résilié de plein droit et sans mise en demeure préalable.
+
+11. Intégralité de l’accord. Le présent Contrat constitue l’intégralité de l'accord entre vous et 
+Sun concernant son objet. Il annule et remplace toutes les communications, propositions, 
+déclarations et garanties, écrites ou orales, présentes ou passées, et prévaut sur toute 
+disposition contradictoire ou additionnelle de tout autre devis, commande, confirmation ou 
+communication entre les parties concernant l'objet du Contrat, et ce, pendant toute la durée 
+du Contrat. Le présent Contrat ne peut être modifié que par un avenant écrit et signé par un 
+représentant habilité de chacune des parties.
+
+Pour toute demande d'information, veuillez vous adresser à : Sun Microsystems, Inc. 901 San 
+Antonio Road, Palo Alto, Californie 94303,.
+
+JAVA 2 RUNTIME ENVIRONMENT (J2RE), VERSION 1.3 
+DISPOSITIONS ADDITIONNELLES
+
+Les présentes dispositions additionnelles au Contrat de Licence Code Objet ("Dispositions 
+Additionnelles") complètent et/ou modifient les dispositions du Contrat de Licence Code Objet 
+(collectivement désignés le "Contrat "). Les termes commençant par une majuscule non définis 
+dans les présentes Dispositions Additionnelles ont la même signification que celle qui leur a été 
+attribuée dans le Contrat. Les présentes Dispositions Additionnelles annulent et remplacent toute 
+disposition contradictoire du Contrat ou de toute licence jointe au Logiciel. 
+
+1. Concession de Licence de Logiciel de Développement et d’Utilisation pour des Besoins 
+Internes. Sous réserve des dispositions du présent Contrat, et notamment de l’Article 4 
+(Restrictions relatives à la technologies Java™) des présentes Dispositions Additionnelles, 
+Sun vous concède un droit limité, non exclusif et non transférable, de reproduire et d’utiliser, 
+pour vos besoins internes, le code objet du Logiciel non modifié et dans son intégralité, aux 
+seules fins de concevoir, développer et tester vos applets et applications Java qui s’exécutent 
+sur la plate-forme Java les « Programmes ».
+
+1. Licence de Distribution de Logiciel. Sous réserve des dispositions du présent Contrat, et 
+notamment de l’Article 4 (Restrictions relatives à la technologies Java™) des présentes 
+Dispositions Additionnelles, Sun vous concède un droit limité, non exclusif et non 
+transférable, de reproduire et de distribuer le Logiciel en code objet exclusivement, à 
+condition que (i) vous distribuiez le Logiciel dans son intégralité et exempt de toute 
+modification, uniquement comme un élément constitutif pour l’exécution de vos 
+Programmes, (ii) les Programmes ajoutent des fonctionnalités importantes et principales au 
+Logiciel, (iii) vous ne distribuez pas de logiciel supplémentaire visant à se substituer aux 
+composants du Logiciel, (iv) vous ne supprimez ni ne modifiez aucune mention ou notice 
+relative à la propriété du Logiciel, (v) vous ne distribuez le Logiciel qu’au travers d'un 
+contrat de licence protégeant les intérêts de Sun, et se conformant aux dispositions du présent 
+Contrat, et (vi) vous acceptez d'indemniser Sun et ses concédants de tous dommages, coûts, 
+responsabilités, de tous montants et/ou dépenses liés à une transaction (y compris les 
+honoraires d'avocats), résultant d’une action intentée par un tiers ou résultant de l'utilisation 
+ou de la distribution de tout ou partie des Programmes et/ou du Logiciel. 
+
+3. Licence de redistribution des Redistribuables. Sous réserve des dispositions du présent 
+Contrat,et notamment de l’Article 4 (Restrictions relatives à la technologies Java des 
+présentes Dispositions Additionnelles, Sun vous concède un droit limité, non exclusif et non 
+transférable, de reproduire et de distribuer les fichiers en code objet expressément désignés 
+dans le fichier « LISEZMOI » du Logiciel comme des fichiers pouvant être redistribués (les 
+«Redistribuables») à condition que (i) vous distribuez les Redistribuables dans leur 
+intégralité, et sans modification (sauf dispositions contraires expresses prévues dans le fichier 
+LISEZMOI) et seulement en tant que composant des Programmes, (ii) vous ne distribuez pas 
+d’autre logiciel visant à se substituer aux composants des Redistribuables, (iii) vous ne 
+supprimez ni ne modifiez aucune mention ou notice relative à la propriété des 
+Redistribuables, (iv) vous ne distribuez les Redistribuables qu’au travers d'un contrat de 
+licence protégeant les intérêts de Sun, et se conformant aux dispositions du présent Contrat, 
+et (v) vous acceptez d'indemniser Sun et ses concédants de tous dommages, coûts, 
+responsabilités, de tout montant et/ou dépenses liés à une transaction (y compris les 
+honoraires d'avocats), résultant d’une action intentée par un tiers ou résultant de l'utilisation 
+ou de la distribution de tout ou partie des Programmes et/ou du Logiciel. 
+
+4. Restrictions relatives à la technologie Java. Il est interdit de modifier l'Interface de la 
+Plate-forme Java ("IPJ", ou classes contenues dans le package "java" ou dans d'autres 
+programmes du package "java"), en créant d'autres classes dans la IPJ ou en modifiant les 
+classes de la IPJ. Dans le cas où vous développeriez une classe supplémentaire et les 
+Programmes d'Interface ("API") associées, qui (i) étendent la fonctionnalité de la plate-forme 
+Java et (ii) sont divulguées à des développeurs de logiciels tiers dans le cadre du 
+développement d'autres logiciels faisant appel à de telles API, vous vous engagez à diffuser 
+sans délai et largement, les spécifications exactes de ces API, en vue de leur libre utilisation 
+par l'ensemble des développeurs. Vous ne pouvez pas développer ou autoriser vos licenciés à 
+développer d'autres classes, interfaces ou sous-packages pouvant être identifiés comme 
+"java", "javax", "sun" ou autre dénomination similaire, telles que spécifiées par Sun dans 
+toute classe ayant trait à une convention de nommage. 
+
+5. Marques et logos. Vous reconnaissez et acceptez que Sun est le propriétaire des marques, 
+marques de service, logos et autres signes distinctifs suivants SUN, SOLARIS, JAVA, JINI,, 
+FORTE, STAROFFICE, STARPORTAL et iPLANET, ainsi que des marques, marques de 
+service, logos et autres signes distinctifs liés à SUN, SOLARIS, JAVA, JINI,, FORTE, 
+STAROFFICE, STARPORTAL and iPLANET (les "Marques Java"), et vous acceptez de 
+respecter les règles relatives à l'utilisation des Marques et Logos de Sun telles qu’elles 
+figurent sur le site http://www.sun.com/policies/trademarks. Toutes les utilisations que vous 
+ferez des Marques Sun devront l'être dans un sens favorable à Sun. 
+
+6. Code source. Le Logiciel peut contenir le code source qui est fourni à seule fin 
+d'information, conformément aux dispositions du présent Contrat. Le code source ne peut pas 
+être redistribué, sauf disposition expresse du présent Contrat. 
+
+7. 	Résiliation pour contrefaçon. Toute partie peut de plein droit et sans mise en demeure 
+préalable, résilier le présent Contrat dans le cas où le Logiciel deviendrait, ou risquerait de 
+devenir, selon son avis, l’objet d’une action en contrefaçon d’un brevet, d’une atteinte à un 
+secret commercial, aux droits d’auteur ou d’un autre droit de propriété intellectuelle. 
+
+Pour toute demande d'information, veuillez vous adresser à : Sun Microsystems, Inc. 901 San 
+Antonio Road, Palo Alto, Californie 94303
+BCL FINAL j2re-FR2-clean.doc

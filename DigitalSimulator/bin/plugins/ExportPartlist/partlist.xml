@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xmlspyxslfo D:\FreeGroup\DigitalSimulatorExports\additionalFiles\ExportPartlistPDF\partlist.xsl?>
+<circuit name="BCD-Counter.dsim">
+	<imagePath>D:\FreeGroup\DigitalSimulator\bin\temp\BCD-Counter_2.png</imagePath>
+	<description>
+		Der Autor des DigitalSimulators achten bei seiner Software, Dokumentation und Bauanleitungen auf Aktualität, Korrektheit und Vollständigkeit. 
+		Sollte es trotzdem zu Schäden irgendeiner Art kommen, welche durch die Nutzung der Software verursacht wurden, werden Haftungsansprüche gegen den oder die Autoren grundsätzlich ausgeschlossen. 
+		Der Autor behält sich vor, die Software oder Daten ohne Ankündigung zu verändern, zu ergänzen oder die Veröffentlichung einzustellen. 
+	</description>
+	<parts>
+		<part partNumber="1" name="7490 (Asynchroner dezimaler Vorwärtszähler)" dataSheetURL=""/>
+		<part partNumber="2" name="Versorgungsspannung 5 Volt Gleichspannung" dataSheetURL="http://..."/>
+		<part partNumber="3" name="1 x Um-Schalter" dataSheetURL="http://..."/>
+		<part partNumber="4" name="Widerstand 4.7k Ohm" dataSheetURL="http://..."/>
+		<part partNumber="5" name="Widerstand 4.7k Ohm" dataSheetURL="http://..."/>
+		<part partNumber="6" name="7400 (4xNAND)" dataSheetURL="http://www.falstaff.demon.co.uk/7400.html"/>
+		<part partNumber="7" name="Widerstand 820 Ohm" dataSheetURL="http://..."/>
+		<part partNumber="8" name="Leuchtdiode" dataSheetURL="http://..."/>
+		<part partNumber="9" name="Widerstand 820 Ohm" dataSheetURL="http://..."/>
+		<part partNumber="10" name="Leuchtdiode" dataSheetURL="http://..."/>
+		<part partNumber="11" name="Widerstand 820 Ohm" dataSheetURL="http://..."/>
+		<part partNumber="12" name="Leuchtdiode" dataSheetURL="http://..."/>
+		<part partNumber="13" name="Widerstand 820 Ohm" dataSheetURL="http://..."/>
+		<part partNumber="14" name="Leuchtdiode" dataSheetURL="http://..."/>
+	</parts>
+	<connections>
+		<connection fromPart="2" fromPin="1" fromPinDesc="VCC" toPart="1" toPin="5" toPinDesc="VCC"/>
+		<connection fromPart="2" fromPin="2" fromPinDesc="GND" toPart="1" toPin="10" toPinDesc="GND"/>
+		<connection fromPart="2" fromPin="2" fromPinDesc="GND" toPart="1" toPin="2" toPinDesc="R01"/>
+		<connection fromPart="2" fromPin="2" fromPinDesc="GND" toPart="1" toPin="6" toPinDesc="S91"/>
+		<connection fromPart="2" fromPin="2" fromPinDesc="GND" toPart="1" toPin="7" toPinDesc="S92"/>
+		<connection fromPart="1" fromPin="12" fromPinDesc="Q0" toPart="1" toPin="1" toPinDesc="B"/>
+		<connection fromPart="2" fromPin="1" fromPinDesc="VCC" toPart="6" toPin="14" toPinDesc="VCC"/>
+		<connection fromPart="2" fromPin="2" fromPinDesc="GND" toPart="6" toPin="7" toPinDesc="GND"/>
+		<connection fromPart="6" fromPin="6" fromPinDesc="2Y" toPart="6" toPin="2" toPinDesc="1B"/>
+		<connection fromPart="6" fromPin="3" fromPinDesc="1Y" toPart="6" toPin="4" toPinDesc="2A"/>
+		<connection fromPart="5" fromPin="1" fromPinDesc="" toPart="2" toPin="1" toPinDesc="VCC"/>
+		<connection fromPart="5" fromPin="2" fromPinDesc="" toPart="6" toPin="5" toPinDesc="2B"/>
+		<connection fromPart="4" fromPin="1" fromPinDesc="" toPart="2" toPin="1" toPinDesc="VCC"/>
+		<connection fromPart="4" fromPin="2" fromPinDesc="" toPart="6" toPin="4" toPinDesc="2A"/>
+		<connection fromPart="3" fromPin="1" fromPinDesc="Eingang 1" toPart="4" toPin="2" toPinDesc=""/>
+		<connection fromPart="3" fromPin="2" fromPinDesc="Eingang 2" toPart="5" toPin="2" toPinDesc=""/>
+		<connection fromPart="3" fromPin="3" fromPinDesc="Ausgang" toPart="2" toPin="2" toPinDesc="GND"/>
+		<connection fromPart="8" fromPin="1" fromPinDesc="Anode" toPart="7" toPin="2" toPinDesc=""/>
+		<connection fromPart="8" fromPin="2" fromPinDesc="Kathode" toPart="2" toPin="2" toPinDesc="GND"/>
+		<connection fromPart="10" fromPin="1" fromPinDesc="Anode" toPart="9" toPin="2" toPinDesc=""/>
+		<connection fromPart="10" fromPin="2" fromPinDesc="Kathode" toPart="2" toPin="2" toPinDesc="GND"/>
+		<connection fromPart="12" fromPin="1" fromPinDesc="Anode" toPart="11" toPin="2" toPinDesc=""/>
+		<connection fromPart="12" fromPin="2" fromPinDesc="Kathode" toPart="2" toPin="2" toPinDesc="GND"/>
+		<connection fromPart="14" fromPin="1" fromPinDesc="Anode" toPart="13" toPin="2" toPinDesc=""/>
+		<connection fromPart="14" fromPin="2" fromPinDesc="Kathode" toPart="2" toPin="2" toPinDesc="GND"/>
+		<connection fromPart="1" fromPin="14" fromPinDesc="A" toPart="6" toPin="3" toPinDesc="1Y"/>
+		<connection fromPart="1" fromPin="3" fromPinDesc="R02" toPart="2" toPin="2" toPinDesc="GND"/>
+		<connection fromPart="7" fromPin="1" fromPinDesc="" toPart="1" toPin="12" toPinDesc="Q0"/>
+		<connection fromPart="9" fromPin="1" fromPinDesc="" toPart="1" toPin="9" toPinDesc="Q1"/>
+		<connection fromPart="11" fromPin="1" fromPinDesc="" toPart="1" toPin="8" toPinDesc="Q2"/>
+		<connection fromPart="13" fromPin="1" fromPinDesc="" toPart="1" toPin="11" toPinDesc="Q3"/>
+	</connections>
+</circuit>

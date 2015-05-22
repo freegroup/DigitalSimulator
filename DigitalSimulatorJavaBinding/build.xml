@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="Yan" default="all" basedir=".">
+
+<!-- =================================================================== -->
+<!--  Configuration                                                      -->
+<!-- =================================================================== -->
+<property name="build.home"          value="../DigitalSimulator/bin/jars"/>
+<property name="lib.dir"             value="../DigitalSimulator/bin/jars"/>
+<property name="compile.debug"       value="true"/>
+<property name="compile.deprecation" value="true"/>
+<property name="compile.optimize"    value="false"/>
+
+
+<!-- =================================================================== -->
+<!-- Classpath                                                           -->
+<!-- =================================================================== -->
+<path id="compile.classpath">
+   <fileset dir="${lib.dir}">
+   	<include name="*.jar"/>
+   	<exclude name="DigiSimJavaBinding.jar"/>
+   </fileset>
+   <pathelement location="./classes"/>
+</path>
+
+<!-- =================================================================== -->
+<!-- Compile                                                             -->
+<!-- =================================================================== -->
+<target name="all"  depends="clean, compile, jar"  description="create the project">
+	  <ant dir="../DigitalSimulatorDialogs"/>
+	  <ant dir="../DigitalSimulatorExports"/>
+	  <ant dir="../DigitalSimulatorObjects"/>
+	  <ant dir="../DigitalSimulatorTools"/>
+	
+</target>
+
+
+<!-- =================================================================== -->
+<!-- CLEAN                                                               -->
+<!-- =================================================================== -->
+<target name="clean" description="Delete old build and dist directories">
+    <delete dir="./classes"/>
+	<mkdir  dir="./classes"/>
+	
+</target>
+
+<!-- =================================================================== -->
+<!-- Compile                                                             -->
+<!-- =================================================================== -->
+<target name="compile"   description="Compile Java sources">
+	<!-- Compile Java classes as necessary -->
+	<javac srcdir="java"
+	       compiler="classic" 
+	       debug="on" 
+	       destdir="./classes" >
+       <classpath refid="compile.classpath" />
+	</javac>
+</target>
+
+
+<!-- =================================================================== -->
+<!-- Compile  the Core jar                                               -->
+<!-- =================================================================== -->
+<target name="jar"  depends="compile" description="Create the yan jar">
+	<jar destfile="${build.home}/DigiSimJavaBinding.jar" >
+		<fileset dir="./classes">
+		</fileset>
+		<fileset dir="./java">
+			<include name="**/*.gif"/>
+			<include name="**/*.map"/>
+			<include name="**/*.jpg"/>
+			<include name="**/*.png"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By"   value="Andreas Herz"/>
+			<attribute name="Jar-Version" value="3"/>
+		</manifest>
+	</jar>
+</target>
+
+
+
+</project>
+

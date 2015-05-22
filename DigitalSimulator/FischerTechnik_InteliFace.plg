@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FischerTechnik_InteliFace - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Release/FischerTechnik_InteliFace/FischerTechnik_InteliFace.res" /i "sources\Plugins\DLL\SerialPort\FischerTechnik_InteliFace" /d "NDEBUG" /d "_AFXDLL" "C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\FischerTechnik_InteliFace\FischerTechnik_InteliFace.rc"" 
+Creating temporary file "C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP448.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDLL" /D "_AFXDLL" /Fp"Release/FischerTechnik_InteliFace/FischerTechnik_InteliFace.pch" /YX /Fo"Release/FischerTechnik_InteliFace/" /Fd"Release/FischerTechnik_InteliFace/" /FD /c 
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\FischerTechnik_InteliFace\DialogOption.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\SerialPort.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\FischerTechnik_InteliFace\SerialPortContext.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\StdAfx.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\SysColorStatic.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP448.tmp" 
+Creating temporary file "C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP449.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/FischerTechnik_InteliFace/FischerTechnik_InteliFace.pdb" /machine:I386 /out:"bin\plugins\FischerTechnik_InteliFace.dll" /implib:"Release/FischerTechnik_InteliFace/FischerTechnik_InteliFace.lib" 
+.\Release\FischerTechnik_InteliFace\DialogOption.obj
+.\Release\FischerTechnik_InteliFace\SerialPort.obj
+.\Release\FischerTechnik_InteliFace\SerialPortContext.obj
+.\Release\FischerTechnik_InteliFace\StdAfx.obj
+.\Release\FischerTechnik_InteliFace\SysColorStatic.obj
+.\Release\FischerTechnik_InteliFace\FischerTechnik_InteliFace.res
+]
+Creating command line "link.exe @C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP449.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+DialogOption.cpp
+SerialPort.cpp
+SerialPortContext.cpp
+StdAfx.cpp
+SysColorStatic.cpp
+Linking...
+   Creating library Release/FischerTechnik_InteliFace/FischerTechnik_InteliFace.lib and object Release/FischerTechnik_InteliFace/FischerTechnik_InteliFace.exp
+
+
+
+<h3>Results</h3>
+FischerTechnik_InteliFace.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

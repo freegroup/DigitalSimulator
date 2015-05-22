@@ -1,0 +1,41 @@
+// DigitalTraineeStudio.odl : Quellcode der Typbibliothek für DigitalTraineeStudio.exe
+
+// Diese Datei wird vom MIDL-Compiler bearbeitet, um die
+// Typbibliothek zu erzeugen (DigitalTraineeStudio.tlb).
+
+[ uuid(94F3F5E2-6114-11D2-890F-004F49031E0C), version(1.0) ]
+library DigitalTrainingStudio
+{
+	importlib("stdole32.tlb");
+	
+
+	//  Primäre Dispatch-Schnittstelle für CDigitalTraineeStudioDoc
+	
+	[ uuid(94F3F5E3-6114-11D2-890F-004F49031E0C) ]
+	dispinterface IDigitalTrainingStudio
+	{
+		properties:
+			// HINWEIS - Der Klassen-Assistent verwaltet hier Informationen über die Eigenschaften.
+			//    Lassen Sie äußerste Vorsicht walten, falls Sie diesen Abschnitt bearbeiten.
+			//{{AFX_ODL_PROP(CDigitalTraineeStudioDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// HINWEIS - Der Klassen-Assistent verwaltet hier Informationen über die Methoden.
+			//    Lassen Sie äußerste Vorsicht walten, falls Sie diesen Abschnitt bearbeiten.
+			//{{AFX_ODL_METHOD(CDigitalTraineeStudioDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Klassen-Informationen für CDigitalTraineeStudioDoc
+	
+	[ uuid(94F3F5E1-6114-11D2-890F-004F49031E0C) ]
+	coclass Document
+	{
+		[default] dispinterface IDigitalTrainingStudio;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

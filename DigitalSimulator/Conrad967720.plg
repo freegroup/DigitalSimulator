@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Conrad967720 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Release\Conrad967720/Conrad967720.res" /i "sources\Plugins\DLL\SerialPort\Conrad967720" /d "NDEBUG" /d "_AFXDLL" "C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\Conrad967720\Conrad967720.rc"" 
+Creating temporary file "C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP443.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDLL" /D "_AFXDLL" /Fp"Release\Conrad967720/Conrad967720.pch" /YX /Fo"Release\Conrad967720/" /Fd"Release\Conrad967720/" /FD /c 
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\Conrad967720\DialogOption.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\SerialPort.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\Conrad967720\SerialPortContext.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\StdAfx.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\SysColorStatic.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP443.tmp" 
+Creating temporary file "C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP444.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release\Conrad967720/Conrad967720.pdb" /machine:I386 /out:"bin\plugins\Conrad967720.dll" /implib:"Release\Conrad967720/Conrad967720.lib" 
+.\Release\Conrad967720\DialogOption.obj
+.\Release\Conrad967720\SerialPort.obj
+.\Release\Conrad967720\SerialPortContext.obj
+.\Release\Conrad967720\StdAfx.obj
+.\Release\Conrad967720\SysColorStatic.obj
+.\Release\Conrad967720\Conrad967720.res
+]
+Creating command line "link.exe @C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP444.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+DialogOption.cpp
+SerialPort.cpp
+SerialPortContext.cpp
+StdAfx.cpp
+SysColorStatic.cpp
+Linking...
+   Creating library Release\Conrad967720/Conrad967720.lib and object Release\Conrad967720/Conrad967720.exp
+
+
+
+<h3>Results</h3>
+Conrad967720.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,7 @@
+// calculate the values of the output pins
+// return 'false' for NO redraw neccessary
+// return 'true' for redraw neccessary
+//
+import de.freegroup.digitalsimulator.*;
+
+return false;

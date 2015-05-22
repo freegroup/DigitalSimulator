@@ -1,0 +1,13 @@
+// this method will be called if the user double clicks over the
+// object
+// 'x' and 'y' contains the relative position in the object
+//
+// Note: start the TraceWin.exe to see this message
+//
+import de.freegroup.digitalsimulator.*;
+
+Trace.info("user clicks in ["+x+","+y+"]");
+
+//return true if an redraw of the object is required
+//
+return false;

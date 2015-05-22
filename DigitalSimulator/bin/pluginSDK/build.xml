@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="Yan" default="all" basedir=".">
+<property file="build.properties" />
+
+<!-- =================================================================== -->
+<!--  Configuration                                                      -->
+<!-- =================================================================== -->
+<property name="compile.debug"       value="true"/>
+<property name="compile.deprecation" value="false"/>
+<property name="compile.optimize"    value="true"/>
+
+
+<!-- =================================================================== -->
+<!-- Classpath                                                           -->
+<!-- =================================================================== -->
+<path id="compile.classpath">
+   <fileset dir="${lib.dir}">
+   	<include name="*.jar"/>
+   </fileset>
+   <pathelement location="./classes"/>
+</path>
+
+<!-- =================================================================== -->
+<!-- Make Plugins                                                        -->
+<!-- =================================================================== -->
+<target name="all"  depends="clean, compile"  description="create the project">
+
+	<!-- =================================================================== -->
+	<!-- Compile  the InputBus Plugin                                                -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/InputBus.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/bus/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.bus.InputBus"/>
+			</manifest>
+		</jar>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the OutputBus Plugin                                                -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/OutputBus.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/bus/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.bus.OutputBus"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the InputOutputBus Plugin                                                -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/InputOutputBus.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/bus/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.bus.InputOutputBus"/>
+			</manifest>
+		</jar>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the Halbaddierer Plugin                                    -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/Halbaddierer.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/halbaddierer/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.halbaddierer.Halbaddierer"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the Identity Plugin                                        -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/Identity.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/identity/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.identity.Identity"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the LoadableBinaryCounter Plugin                           -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/LoadableBinaryCounter.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/loadablebinarycounter/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.loadablebinarycounter.LoadableBinaryCounter"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the MonoFlop Plugin                                        -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/MonoFlop.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/monoflop/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.monoflop.MonoFlop"/>
+			</manifest>
+		</jar>
+	
+
+	<!-- =================================================================== -->
+	<!-- Compile  the SmallInverter Plugin                                   -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/SmallInverter.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/smallinverter/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.smallinverter.SmallInverter"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the RS232 Plugin                                           -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/RS232.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/rs232/*.*"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.rs232.Output"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the SwitchOffDelay Plugin                                  -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/SwitchOffDelay.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/switchoffdelay/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.switchoffdelay.SwitchOffDelay"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the SwitchOonDelay Plugin                                  -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/SwitchOnDelay.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/switchondelay/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.switchondelay.SwitchOnDelay"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the Volladdierer1Bit Plugin                                -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/Volladdierer1Bit.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/volladdierer1bit/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.volladdierer1bit.Volladdierer1Bit"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the Volladdierer4Bit Plugin                                -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/Volladdierer4Bit.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/volladdierer4bit/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.volladdierer4bit.Volladdierer4Bit"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the ASCIIDisplay Plugin                                    -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/ASCIIDisplay.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/ASCIIDisplay/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.ASCIIDisplay.ASCIIDisplay"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the ByteDisplay Plugin                                     -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/ByteDisplay.jar" >
+		<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/ByteDisplay/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.ByteDisplay.ByteDisplay"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the Decimal2BCD Plugin                                     -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/Decimal2BCD.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/Decimal2BCD/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.Decimal2BCD.Decimal2BCD"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the HEX7Segment Plugin                                     -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/HEX7Segment.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/HEX7Segment/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.HEX7Segment.HEX7Segment"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the HEXKeyboard Plugin                                     -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/HEXKeyboard.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/HEXKeyboard/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.HEXKeyboard.HEXKeyboard"/>
+			</manifest>
+		</jar>
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the Komparator Plugin                                     -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/Komparator.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/Komparator/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.Komparator.Komparator"/>
+			</manifest>
+		</jar>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the LatchTransparent Plugin                                -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/LatchTransparent.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/LatchTransparent/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.LatchTransparent.LatchTransparent"/>
+			</manifest>
+		</jar>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the LatchTrigger Plugin                                    -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/LatchTrigger.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/LatchTrigger/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.LatchTrigger.LatchTrigger"/>
+			</manifest>
+		</jar>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the LoadableShiftRegister Plugin                           -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/LoadableShiftRegister.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/LoadableShiftRegister/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.LoadableShiftRegister.LoadableShiftRegister"/>
+			</manifest>
+		</jar>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the ShiftRegister Plugin                                   -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/ShiftRegister.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/ShiftRegister/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Norbert Hagemann"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.ShiftRegister.ShiftRegister"/>
+			</manifest>
+		</jar>
+	
+	
+	<!-- =================================================================== -->
+	<!-- Compile  the NumericDisplay Plugin                                  -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/NumericDisplay.jar" >
+			<fileset dir="./classes/">
+				<include name="de/hagemann/digitalsimulator/plugin/NumericDisplay/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.hagemann.digitalsimulator.plugin.NumericDisplay.NumericDisplay"/>
+			</manifest>
+		</jar>
+</target>
+
+
+<!-- =================================================================== -->
+<!-- CLEAN                                                               -->
+<!-- =================================================================== -->
+<target name="clean" description="Delete old build and dist directories">
+    <delete dir="./classes"/>
+	<mkdir  dir="./classes"/>
+</target>
+
+<!-- =================================================================== -->
+<!-- Compile                                                             -->
+<!-- =================================================================== -->
+<target name="compile"   description="Compile Java sources">
+	<!-- Compile Java classes as necessary -->
+	<javac srcdir="java"
+	       compiler="classic" 
+	       debug="on" 
+	       destdir="./classes" >
+       <classpath refid="compile.classpath" />
+	</javac>
+	<!-- move the images to the class directory for the jar -->
+    <copy todir="./classes">
+		<fileset dir="./java">
+      		<include name="**"/>
+		</fileset>
+    </copy>
+</target>
+
+</project>
+

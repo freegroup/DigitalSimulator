@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="Yan" default="all" basedir=".">
+
+<!-- =================================================================== -->
+<!--  Configuration                                                      -->
+<!-- =================================================================== -->
+<property name="plugin.dir"          value="../DigitalSimulator/bin/plugins"/>
+<property name="lib.dir"             value="../DigitalSimulator/bin/jars"/>
+<property name="compile.debug"       value="true"/>
+<property name="compile.deprecation" value="false"/>
+<property name="compile.optimize"    value="true"/>
+<property name="tmp.dir"             value="./tmp"/>
+
+
+<!-- =================================================================== -->
+<!-- Classpath                                                           -->
+<!-- =================================================================== -->
+<path id="compile.classpath">
+   <fileset dir="${lib.dir}">
+   	<include name="*.jar"/>
+   </fileset>
+   <pathelement location="./classes"/>
+</path>
+
+<!-- =================================================================== -->
+<!-- Compile                                                             -->
+<!-- =================================================================== -->
+<target name="all"  depends="clean, compile"  description="create the project">
+
+	<!-- =============================================================== -->
+	<!-- Compile the Partlist Plugin                                     -->
+	<!-- =============================================================== -->
+	<jar destfile="${tmp.dir}/ExportPartlist.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/export/partlistpdf/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By" value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.export.partlistpdf.Export"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/ExportPartlist.export" >
+		<fileset dir="${tmp.dir}">
+			<include name="ExportPartlist.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="ExportPartlist/**"/>
+		</fileset>
+	</zip>
+
+	<!-- =============================================================== -->
+	<!-- Compile the DocumentDocumentation Plugin                        -->
+	<!-- =============================================================== -->
+	<jar destfile="${tmp.dir}/ExportDocumentation.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/export/documentation/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By" value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.export.documentation.Export"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/ExportDocumentation.export" >
+		<fileset dir="${tmp.dir}">
+			<include name="ExportDocumentation.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="ExportDocumentation/**"/>
+		</fileset>
+	</zip>
+
+
+	<!-- =================================================================== -->
+	<!-- Compile  the ExportRawXML Plugin                                -->
+	<!-- =================================================================== -->
+	<jar destfile="${tmp.dir}/ExportRawXML.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/export/rawxml/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By" value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.export.rawxml.Export"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/ExportRawXML.export" >
+		<fileset dir="${tmp.dir}">
+			<include name="ExportRawXML.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="ExportRawXML/**"/>
+		</fileset>
+	</zip>
+
+
+	<!-- =================================================================== -->
+	<!-- Compile  the ExportWired Plugin                                -->
+	<!-- =================================================================== -->
+	<jar destfile="${tmp.dir}/ExportWired.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/export/wired/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By" value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.export.wired.Export"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/ExportWired.export" >
+		<fileset dir="${tmp.dir}">
+			<include name="ExportWired.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="ExportWired/**"/>
+		</fileset>
+	</zip>
+
+
+	<!-- =================================================================== -->
+	<!-- Compile  the ExportPNG Plugin                                       -->
+	<!-- =================================================================== -->
+	<jar destfile="${tmp.dir}/ExportPNG.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/export/png/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By" value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.export.png.Export"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/ExportPNG.export" >
+		<fileset dir="${tmp.dir}">
+			<include name="ExportPNG.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="ExportPNG/**"/>
+		</fileset>
+	</zip>
+
+	<!-- =================================================================== -->
+	<!-- Compile  the ExportWebShare Plugin                                  -->
+	<!-- =================================================================== -->
+	<jar destfile="${tmp.dir}/ExportWebShare.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/export/webshare/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By" value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.export.webshare.Export"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/ExportWebShare.export" >
+		<fileset dir="${tmp.dir}">
+			<include name="ExportWebShare.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="ExportWebShare/**"/>
+		</fileset>
+	</zip>
+</target>
+
+
+<!-- =================================================================== -->
+<!-- CLEAN                                                               -->
+<!-- =================================================================== -->
+<target name="clean" description="Delete old build and dist directories">
+    <delete dir="./classes"/>
+	<mkdir  dir="./classes"/>
+    <delete dir="${tmp.dir}"/>
+	<mkdir  dir="${tmp.dir}"/>
+</target>
+
+<!-- =================================================================== -->
+<!-- Compile                                                             -->
+<!-- =================================================================== -->
+<target name="compile"   description="Compile Java sources">
+
+	<!-- Compile Java classes as necessary -->
+	<javac srcdir="java"
+	       debug="on" 
+	       compiler="classic" 
+	       destdir="./classes" >
+       <classpath refid="compile.classpath" />
+	</javac>
+	<!-- move the images to the class directory for the jar -->
+    <copy todir="./classes">
+		<fileset dir="./java">
+      		<include name="**"/>
+		</fileset>
+    </copy>
+</target>
+
+
+</project>
+

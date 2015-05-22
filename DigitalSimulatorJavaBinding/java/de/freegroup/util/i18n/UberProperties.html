@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head><title>Uber Properties - com.Ostermiller.util Java Utilities</title>
+<meta name="description" content="A replacement for the java.utils.Properties class with enhancements.">
+<meta name="keywords" content="properties, properties, uberproperties, uber properties, property, property, uber, uber, replacement, token, tokens,java, util, utility, class, library, libraries, source, code, open source, gpl, javadoc">
+<script language="JavaScript"><!--
+var agt=navigator.userAgent.toLowerCase();
+var is_major = parseInt(navigator.appVersion);
+var is_nav  = ((agt.indexOf('mozilla')!=-1) && (agt.indexOf('msie')==-1) &&
+  (agt.indexOf('spoofer')==-1) && (agt.indexOf('compatible') == -1) && 
+  (agt.indexOf('opera')==-1) && (agt.indexOf('webtv')==-1) && 
+  (agt.indexOf('hotjava')==-1));
+var styleok=(!(is_nav && (is_major <= 4)));
+if (!styleok){
+    document.write("<" + "!" + "-" + "-");
+}
+//--></script>
+<link rel="stylesheet" media="screen" title="Utilites Look and Feel" href="utils.css" type="text/css">
+<script language="JavaScript"><!--
+if (!styleok){
+    document.write("-" + "-" + ">");
+}
+//--></script>
+</head>
+<body>
+<div class=titleandlinks>
+<div class=titlebox>
+<h1>Uber Properties - <a href="./">com.Ostermiller.util Java Utilities</a></h1>
+</div>
+<div class=linksbox>
+<a href="./">Utilities</a><br>
+<a href="download.html">Download</a><br>
+<a href="source.html">Browse Source</a><br>
+<a href="doc/">JavaDoc</a>
+
+</div>
+</div>
+
+<div class=examplecode><h3>Example</h3>
+<pre><span class=comment>// create the properties
+</span><span class=identifier>UberProperties props </span><span class=operator>= </span><span class=reservedWord>new </span><span class=identifier>UberProperties</span><span class=separator>();
+
+</span><span class=comment>// File in which changes will be stored
+// relative to the users home directory
+</span><span class=identifier>String</span><span class=separator>[] </span><span class=identifier>userFile </span><span class=operator>= </span><span class=reservedWord>new </span><span class=identifier>String</span><span class=separator>[]{
+	</span><span class=literal>&quot;.java&quot;</span><span class=separator>,</span><span class=literal>&quot;uberpropertiestest.properties&quot;
+</span><span class=separator>};
+
+</span><span class=comment>// This file must exist for this example to work
+// this file should contain default values.
+// In this case, it would be best to have the following line:
+// lastDate=This example was just run for the first time.
+</span><span class=identifier>String systemResource </span><span class=operator>= </span><span class=literal>&quot;uberpropertiestest.properties&quot;</span><span class=separator>;
+
+</span><span class=comment>// load the properties
+</span><span class=identifier>props</span><span class=separator>.</span><span class=identifier>load</span><span class=separator>(</span><span class=identifier>userFile</span><span class=separator>, </span><span class=identifier>systemResource</span><span class=separator>);
+
+</span><span class=comment>// Display the date for the last time this example was run.
+</span><span class=identifier>System</span><span class=separator>.</span><span class=identifier>out</span><span class=separator>.</span><span class=identifier>println</span><span class=separator>( </span><span class=identifier>props</span><span class=separator>.</span><span class=identifier>getProperty</span><span class=separator>(</span><span class=literal>&quot;lastDate&quot;</span><span class=separator>));
+
+</span><span class=comment>// set the date
+</span><span class=identifier>props</span><span class=separator>.</span><span class=identifier>setProperty</span><span class=separator>(</span><span class=literal>&quot;lastDate&quot;</span><span class=separator>, </span><span class=reservedWord>new </span><span class=identifier>Date</span><span class=separator>().</span><span class=identifier>toString</span><span class=separator>());
+
+</span><span class=comment>// resave the properties so the date will be printed next time
+</span><span class=identifier>props</span><span class=separator>.</span><span class=identifier>save</span><span class=separator>(</span><span class=identifier>userFile</span><span class=separator>);</span></pre>
+</div>
+
+<p>A replacement for the java.utils.Properties class.  This version can read and
+write properties files that are in the same format but it can handle multiple 
+properties with the same name and makes comments from the files available.</p>
+
+<p>[<a href="./#download">Download /w Source</a> |
+<a href="http://www.gjt.org/servlets/JCVSlet/log/gjt/com/Ostermiller/util/UberProperties.java/0">Version History</a> | 
+<a href="UberProperties.java.html">Browse Source</a> |
+<a href="doc/com/Ostermiller/util/UberProperties.html">Documentation</a>]</p>
+<br clear=all>
+
+<hr>
+
+<h2><a name="license">License</a></h2>
+
+<p>Copyright (c) 2001-2003 by <a href="http://ostermiller.org/contact.pl?regarding=Java+Utilities">Stephen Ostermiller</a></p>
+
+<p>This library is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published
+by the Free Software Foundation; either version 2 of the License or (at
+your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE. See the
+<a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a> for more details.</p>
+</body>
+</html>

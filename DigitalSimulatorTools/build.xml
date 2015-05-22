@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="Yan" default="all" basedir=".">
+
+<!-- =================================================================== -->
+<!--  Configuration                                                      -->
+<!-- =================================================================== -->
+<property name="plugin.dir"          value="../DigitalSimulator/bin/plugins"/>
+<property name="tmp.dir"             value="./tmp"/>
+<property name="lib.dir"             value="../DigitalSimulator/bin/jars"/>
+<property name="compile.debug"       value="true"/>
+<property name="compile.deprecation" value="false"/>
+<property name="compile.optimize"    value="true"/>
+
+
+<!-- =================================================================== -->
+<!-- Classpath                                                           -->
+<!-- =================================================================== -->
+<path id="compile.classpath">
+   <fileset dir="${lib.dir}">
+   	<include name="*.jar"/>
+   </fileset>
+   <pathelement location="./classes"/>
+</path>
+
+<!-- =================================================================== -->
+<!-- Compile                                                             -->
+<!-- =================================================================== -->
+<target name="all"  depends="clean, compile"  description="create the project">
+
+	<!-- =============================================================== -->
+	<!-- Compile  the PluginWizard Plugin                                -->
+	<!-- =============================================================== -->
+	<jar destfile="${tmp.dir}/PluginWizard.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/plugin/tool/PluginWizard/*.class"/>
+		</fileset>
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/plugin/tool/PluginWizard/*.gif"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By"   value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.tool.PluginWizard.Tool"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/PluginWizard.tool" >
+		<fileset dir="${tmp.dir}">
+			<include name="PluginWizard.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="PluginWizard/**"/>
+		</fileset>
+	</zip>
+
+
+	<!-- =============================================================== -->
+	<!-- Compile  the Paint Plugin                                       -->
+	<!-- =============================================================== -->
+	<jar destfile="${tmp.dir}/CircuitCatalog.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/plugin/tool/CircuitCatalog/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By"   value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.tool.CircuitCatalog.JImagePaint"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/CircuitCatalog.tool" >
+		<fileset dir="${tmp.dir}">
+			<include name="CircuitCatalog.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="CircuitCatalog/**"/>
+		</fileset>
+	</zip>
+
+
+	<!-- =============================================================== -->
+	<!-- Compile  the I18NEditor Plugin                                  -->
+	<!-- =============================================================== -->
+	<jar destfile="${tmp.dir}/I18NEditor.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/plugin/tool/I18NEditor/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By"   value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.tool.I18NEditor.Tool"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/I18NEditor.tool" >
+		<fileset dir="${tmp.dir}">
+			<include name="I18NEditor.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="I18NEditor/**"/>
+		</fileset>
+	</zip>
+
+
+	<!-- =============================================================== -->
+	<!-- Compile  the LiveUpdate Plugin                                  -->
+	<!-- =============================================================== -->
+	<jar destfile="${tmp.dir}/LiveUpdate.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/plugin/tool/LiveUpdate/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By"   value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.tool.LiveUpdate.Tool"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/LiveUpdate.tool" >
+		<fileset dir="${tmp.dir}">
+			<include name="LiveUpdate.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="LiveUpdate/**"/>
+		</fileset>
+	</zip>
+
+	<!-- =============================================================== -->
+	<!-- Compile  the Resitor Coder Plugin                               -->
+	<!-- =============================================================== -->
+	<jar destfile="${tmp.dir}/ResistorCoder.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/plugin/tool/ResistorCoder/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By"   value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.tool.ResistorCoder.Tool"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/ResistorCoder.tool" >
+		<fileset dir="${tmp.dir}">
+			<include name="ResistorCoder.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="ResistorCoder/**"/>
+		</fileset>
+	</zip>
+
+	<!-- =============================================================== -->
+	<!-- Compile  the DocumentDocumentation Plugin                       -->
+	<!-- =============================================================== -->
+	<jar destfile="${tmp.dir}/DocumentDocumentation.jar" >
+		<fileset dir="./classes/">
+			<include name="de/freegroup/digitalsimulator/plugin/tool/DocumentDocumentation/**"/>
+		</fileset>
+		<manifest>
+			<attribute name="Built-By"   value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.tool.DocumentDocumentation.Tool"/>
+		</manifest>
+	</jar>
+	<zip compress="false" destfile="${plugin.dir}/DocumentDocumentation.tool" >
+		<fileset dir="${tmp.dir}">
+			<include name="DocumentDocumentation.jar"/>
+		</fileset>
+		<fileset dir="./additionalFiles/">
+			<include name="DocumentDocumentation/**"/>
+		</fileset>
+	</zip>
+
+
+
+</target>
+
+
+<!-- =================================================================== -->
+<!-- CLEAN                                                               -->
+<!-- =================================================================== -->
+<target name="clean" description="Delete old build and dist directories">
+    <delete dir="./classes"/>
+	<mkdir  dir="./classes"/>
+    <delete dir="${tmp.dir}"/>
+	<mkdir  dir="${tmp.dir}"/>
+</target>
+
+<!-- =================================================================== -->
+<!-- GENERATE THE CASTOR CLASSES WITH THE XSD Schema Definition          -->
+<!-- =================================================================== -->
+<taskdef name="XSDCompiler" classname="org.exolab.castor.tools.XSDCompiler" >
+<classpath>
+   <fileset dir="${lib.dir}">
+   	<include name="*.jar"/>
+   </fileset>
+</classpath>	
+</taskdef>
+
+<target name="castor"  depends="castorDocumentDocumentation,castorLiveUpdate">
+</target>
+
+<target name="castorLiveUpdate"  description="create the classes for the LiveUpdate tool">
+    <!-- create the classes for LiveUpdate -->
+    <XSDCompiler 
+        package="de.freegroup.digitalsimulator.plugin.tool.LiveUpdate.castor"
+        schema="./castor/LiveUpdate.xsd"
+        force="true"
+        destDir="./java">
+    </XSDCompiler>
+</target>
+    
+<target name="castorDocumentDocumentation"  description="create the classes for the DocumentDocumentation tool">
+    <!-- create the classes for DocumentDocumentation -->
+    <XSDCompiler 
+        package="de.freegroup.digitalsimulator.plugin.tool.DocumentDocumentation.castor"
+        schema="./castor/DocumentDocumentation.xsd"
+        force="true"
+        destDir="./java">
+    </XSDCompiler>
+</target>
+
+<!-- =================================================================== -->
+<!-- Compile                                                             -->
+<!-- =================================================================== -->
+<target name="compile"  depends="castor"  description="Compile Java sources">
+
+	<!-- Compile Java classes as necessary -->
+	<javac srcdir="java"
+	       compiler="classic" 
+	       destdir="./classes" >
+       <classpath refid="compile.classpath" />
+	</javac>
+	
+	<!-- move the images to the class directory for the jar -->
+    <copy todir="./classes">
+		<fileset dir="./java">
+      		<include name="**"/>
+		</fileset>
+    </copy>
+</target>
+
+
+</project>
+

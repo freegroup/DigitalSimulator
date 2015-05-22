@@ -1,0 +1,101 @@
+=========================================================================================
+Version information
+=========================================================================================
+
+SDK Version for    : DigitalSimulator 5.57
+LiveUpdate required: yes
+
+
+
+=========================================================================================
+  How to compile the Java object plugins for the simulator?
+=========================================================================================
+
+Be carefull!! You will override the working plugins in your digital-simulator
+directory. If you use an old version of the SDK (or an old Version of the DigitalSimulator)
+it will damage the existing plugins and the simulator will not work further.
+
+ok - lets start to compile the object plugins.
+
+1. You must have unpack the pluginSDK (with this file) into the DigitalSimulator directory.
+
+2. open a command shell (cmd.exe)
+
+4. change to the directory <DIGITALSIMULATOR_HOME>/pluginSDK
+   (DIGITALSIMULATOR_HOME is the directory of your simulator installation)
+   
+5. execute the batch file "build.bat"
+
+
+
+If you seen a screen like that:
+      .
+      .
+      .
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\SwitchOnDelay.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\Volladdierer1Bit.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\Volladdierer4Bit.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\ASCIIDisplay.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\ByteDisplay.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\Decimal2BCD.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\HEX7Segment.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\HEXKeyboard.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\Komparator.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\LatchTransparent.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\LatchTrigger.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\LoadableShiftRegister.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\ShiftRegister.jar
+      [jar] Building jar: D:\FreeGroup\DigitalSimulator\bin\plugins\NumericDisplay.jar
+
+BUILD SUCCESSFUL
+
+you have successfully build the plugins for the digital simulator.
+
+If you don't see the success of the build -> send me the output of the command shell
+and i will try to help you.
+
+=========================================================================================
+  You can I create a new object Plugin?
+=========================================================================================
+
+1. copy the "./template/Tutorial01.java" to  "./java/de/freegroup/digitalsimulator/plugin/tutorial01/Tutorial01.java"
+
+2. extend the build.xml file with the new plugin ant task. "Ant" is the "make" tool in the Java world.
+   Ant resolve dependencies, compiles, .....pack.... Java classes (and a lot more!!!!)
+   
+   copy this part in the build.xml:
+   -------------------------------
+   
+   	<!-- =================================================================== -->
+	<!-- Compile  the Tutorial01 Plugin                                      -->
+	<!-- =================================================================== -->
+		<jar destfile="${plugin.dir}/tutorial01.jar" >
+			<fileset dir="./classes/">
+				<include name="de/freegroup/digitalsimulator/plugin/tutorial01/*.class"/>
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="Andreas Herz"/>
+				<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.tutorial01.Tutorial01"/>
+			</manifest>
+		</jar>
+	
+	
+3. Start your DigitalSimulator
+
+4. Your new object is in the extended Dialog -> OBJECTGROUP.TUTORIAL01 -> OBJECT.OBJECT01
+
+
+For more implementation details see the examples from Norbert Hagemann or Andreas Herz.
+
+
+
+PLEASE SEND ANY PROPOSALS TO THE AUTHOR <A.Herz@FreeGroup.de>
+
+Thanks and have a lot of fun
+
+
+        Andreas Herz
+
+
+
+

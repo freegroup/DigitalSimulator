@@ -1,0 +1,17 @@
+// this method will be called if the calcualtion stops
+//
+// Note: start the TraceWin.exe to see this message
+//
+
+
+/*
+to expensive for the produktive system. Use tracing only during the
+development.
+
+import de.freegroup.digitalsimulator.*;
+
+Trace.info("stop of the calculation of the object ["+name+"]");
+*/
+
+
+return;

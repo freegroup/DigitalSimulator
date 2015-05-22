@@ -1,0 +1,16 @@
+<circuit name="Arbeitsblatt1">
+	<tmpCircuitPath>D:\FreeGroup\DigitalSimulator\bin\temp\Arbeitsblatt1_3.dsim</tmpCircuitPath>
+	<imagePath>D:\FreeGroup\DigitalSimulator\bin\temp\Arbeitsblatt1_2.png</imagePath>
+	<objects>
+		<object id="00C72100" group="OBJECTGROUP.TIMEELEMENT" type="OBJ_TAKT" version="1.0" positionX="152" positionY="133" width="122" height="103">
+			<input>
+			</input>
+			<output>
+
+				<port id="00C72920" fanOut="0"/>
+			</output>
+		</object>
+	</objects>
+	<links>
+	</links>
+</circuit>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="Yan" default="all" basedir=".">
+
+<!-- =================================================================== -->
+<!--  Configuration                                                      -->
+<!-- =================================================================== -->
+<property name="deploy.home"         value="./../"/>
+<property name="build.home"          value="./bsh_jar"/>
+<property name="src.home"            value="./java"/>
+<property name="bin.home"            value="./bin"/>
+<property name="tsrc.home"           value="./tjava"/>
+<property name="bsh.home"            value="./bsh"/>
+<property name="classes.home"        value="./classes"/>
+<property name="lib.dir"             value="../../jars"/>
+<property name="plugin.dir"          value="../../plugins"/>
+<property name="compile.debug"       value="true"/>
+<property name="compile.deprecation" value="false"/>
+<property name="compile.optimize"    value="true"/>
+<property name="build.compiler"      value="classic"/>
+<property name="plugin.name"         value="TestForExternalUnpack"/>
+
+
+<!-- =================================================================== -->
+<!-- Classpath                                                           -->
+<!-- =================================================================== -->
+<path id="compile.classpath">
+   <fileset dir="${lib.dir}">
+   	<include name="*.jar"/>
+   </fileset>
+   <fileset dir="${plugin.dir}">
+   	<include name="*.jar"/>
+   </fileset>
+   <pathelement location="./classes"/>
+</path>
+
+<!-- =================================================================== -->
+<!-- ALL                                                             -->
+<!-- =================================================================== -->
+<target name="all"  depends="clean, compile, plugin"  description="create the project">
+  <delete dir="${classes.home}"/>
+  <delete dir="${src.home}"/>
+  <delete dir="${build.home}"/>
+  <delete dir="${bin.home}"/>
+</target>
+
+
+<!-- =================================================================== -->
+<!-- CLEAN                                                               -->
+<!-- =================================================================== -->
+<target name="clean" description="Delete old build and dist directories">
+
+  <delete dir="${classes.home}"/>
+	<mkdir  dir="${classes.home}"/>
+	
+  <delete dir="${src.home}"/>
+	<mkdir  dir="${src.home}"/>
+	
+  <delete dir="${build.home}"/>
+	<mkdir  dir="${build.home}"/>
+</target>
+
+<!-- =================================================================== -->
+<!-- Compile                                                             -->
+<!-- =================================================================== -->
+<target name="compile"   description="Compile Java sources">
+
+	<mkdir    dir="${classes.home}"/>
+	
+	<filter token="TEMPLATE" value="${plugin.name}"/>
+	
+	<copy file="./tjava/de/freegroup/digitalsimulator/plugin/object/bsh/TEMPLATE.java" toFile="./java/de/freegroup/digitalsimulator/plugin/object/bsh/${plugin.name}.java" filtering="true" overwrite="true">
+	</copy>
+	
+    <copy todir="${build.home}" filtering="false" overwrite="true">
+      <fileset dir="${bsh.home}"/>
+    </copy>
+    
+    <copy file="${bsh.home}/name" toFile="${build.home}/name" filtering="true" overwrite="true">
+     </copy>
+	
+	<!-- Compile Java classes as necessary -->
+	<javac srcdir="${src.home}"  destdir="${classes.home}" >
+       <classpath refid="compile.classpath" />
+	</javac>
+</target>
+
+
+<!-- =================================================================== -->
+<!-- Compile  the plugin.jar                                                -->
+<!-- =================================================================== -->
+<target name="plugin"  depends="compile" description="Create the yan jar">
+	<jar destfile="${build.home}/${plugin.name}.jar" compress="false">
+		<fileset dir="${classes.home}">
+		</fileset>
+		<manifest>
+			<attribute name="Built-By" value="Andreas Herz"/>
+			<attribute name="Main-Class" value="de.freegroup.digitalsimulator.plugin.object.bsh.${plugin.name}"/>
+		</manifest>
+	</jar>
+	
+	<zip destfile="${deploy.home}/${plugin.name}.object" compress="false">
+		<fileset dir="${build.home}">
+      		<exclude name="*.object"/>
+		</fileset>
+	</zip>
+
+</target>
+
+</project>
+

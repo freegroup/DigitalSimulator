@@ -1,0 +1,77 @@
+# Microsoft Developer Studio Generated Dependency File, included by context.mak
+
+.\AutoFont.cpp : \
+	".\AutoFont.h"\
+	".\StdAfx.h"\
+	
+
+.\BitmapDialog.cpp : \
+	".\BitmapDialog.h"\
+	".\dib256.h"\
+	".\dibpal.h"\
+	".\StdAfx.h"\
+	
+
+.\ConfigDialog.cpp : \
+	".\AutoFont.h"\
+	".\BitmapDialog.h"\
+	".\ConfigDialog.h"\
+	".\Context.h"\
+	".\dib256.h"\
+	".\dibpal.h"\
+	".\IObjectContext.h"\
+	".\IObjectInfo.h"\
+	".\IObjectWorker.h"\
+	"..\..\IPluginBase.h"\
+	".\SnapDialog.h"\
+	".\StdAfx.h"\
+	".\xShadeButton.h"\
+	
+
+.\Context.cpp : \
+	".\AutoFont.h"\
+	".\Context.h"\
+	".\IObjectContext.h"\
+	".\IObjectInfo.h"\
+	".\IObjectWorker.h"\
+	"..\..\IPluginBase.h"\
+	".\StdAfx.h"\
+	
+
+.\dib256.cpp : \
+	".\dib256.h"\
+	".\dibpal.h"\
+	".\StdAfx.h"\
+	
+
+.\dibpal.cpp : \
+	".\dib256.h"\
+	".\dibpal.h"\
+	".\StdAfx.h"\
+	
+
+.\SnapDialog.cpp : \
+	".\BitmapDialog.h"\
+	".\dib256.h"\
+	".\dibpal.h"\
+	".\SnapDialog.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+.\SysColorStatic.cpp : \
+	".\StdAfx.h"\
+	".\SysColorStatic.h"\
+	
+
+.\xShadeButton.cpp : \
+	".\StdAfx.h"\
+	".\xShadeButton.h"\
+	
+
+.\context.rc : \
+	".\backgrou.bmp"\
+	

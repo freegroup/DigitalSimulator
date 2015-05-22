@@ -1,0 +1,2 @@
+import de.freegroup.digitalsimulator.Painter;
+Painter.drawRect(xPos, yPos, xPos+ width,yPos - height);

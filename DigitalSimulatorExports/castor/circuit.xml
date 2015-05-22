@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuit name="Komparator.dsim">
+	<circuitPath>D:\FreeGroup\DigitalSimulator\bin\examples\Komparator.dsim</circuitPath>
+	<tmpCircuitPath>D:\FreeGroup\DigitalSimulator\bin\temp\Komparator_12.dsim</tmpCircuitPath>
+	<imagePath>D:\FreeGroup\DigitalSimulator\bin\temp\ShiftRegister, loadable_7.png</imagePath>
+	<objects>
+		<documentation>
+			<DocumentDocumentation>
+				<version>
+					<v_01x00>
+						<author>
+							<firstName>Andreas</firstName>
+							<lastName>Herz</lastName>
+							<street>Fichtenstrasse</street>
+							<number>70</number>
+							<city>Neckarhausen</city>
+							<zipCode>68535</zipCode>
+							<eMail>A.Herz@FreeGroup.de</eMail>
+						</author>
+						<circuit>
+							<name/>
+							<shortDescription>Dies ist nur eine kurze Beschreibung. nicht mehr</shortDescription>
+							<longDescription>Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung.Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung.Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung.  Dies ist eine lange Beschreibung. Dies ist eine lange Beschreibung.</longDescription>
+						</circuit>
+					</v_01x00>
+				</version>
+			</DocumentDocumentation>
+		</documentation>
+		<object id="00C751C0" group="OBJECTGROUP.ALU" type="4-Bit Komparator" version="1.0" positionX="450" positionY="246" width="239" height="385">
+			<input>
+				<port id="00C76EC0"/>
+				<port id="00C76E10"/>
+				<port id="00C76CB0"/>
+				<port id="00C76C00"/>
+				<port id="00C76B50"/>
+				<port id="00C76AA0"/>
+				<port id="00C769F0"/>
+				<port id="00C76940"/>
+			</input>
+			<output>
+				<port id="00C76D60" fanOut="1"/>
+				<port id="00C76890" fanOut="1"/>
+				<port id="00C76730" fanOut="1"/>
+				<port id="00C76680" fanOut="1"/>
+				<port id="00C765D0" fanOut="1"/>
+				<port id="00C76520" fanOut="1"/>
+			</output>
+		</object>
+		<object id="00C76290" group="OBJECTGROUP.SWITCH" type="HEXKeyboard" version="1.0" positionX="24" positionY="226" width="222" height="265">
+			<input>
+			</input>
+			<output>
+				<port id="00C76060" fanOut="2"/>
+				<port id="00C77F70" fanOut="2"/>
+				<port id="00C77EC0" fanOut="2"/>
+				<port id="00C77E10" fanOut="2"/>
+				<port id="00C77D60" fanOut="0"/>
+			</output>
+		</object>
+		<object id="00C77250" group="OBJECTGROUP.SWITCH" type="HEXKeyboard" version="1.0" positionX="24" positionY="503" width="222" height="265">
+			<input>
+			</input>
+			<output>
+				<port id="00C3E5D0" fanOut="2"/>
+				<port id="00C3EED0" fanOut="2"/>
+				<port id="00C3D3E0" fanOut="2"/>
+				<port id="00C3D330" fanOut="2"/>
+				<port id="00C3D280" fanOut="0"/>
+			</output>
+		</object>
+		<object id="00C789B0" group="OBJECTGROUP.DISPLAY" type="OBJ_LED" version="1.0" positionX="770" positionY="291" width="72" height="53">
+			<input>
+				<port id="00C78670"/>
+			</input>
+			<output>
+			</output>
+		</object>
+		<object id="00C78460" group="OBJECTGROUP.DISPLAY" type="OBJ_LED" version="1.0" positionX="705" positionY="329" width="72" height="53">
+			<input>
+				<port id="00C78160"/>
+			</input>
+			<output>
+			</output>
+		</object>
+		<object id="00C79F20" group="OBJECTGROUP.DISPLAY" type="OBJ_LED" version="1.0" positionX="775" positionY="368" width="72" height="53">
+			<input>
+				<port id="00C79C80"/>
+			</input>
+			<output>
+			</output>
+		</object>
+		<object id="00C79AA0" group="OBJECTGROUP.DISPLAY" type="OBJ_LED" version="1.0" positionX="771" positionY="450" width="72" height="53">
+			<input>
+				<port id="00C797A0"/>
+			</input>
+			<output>
+			</output>
+		</object>
+		<object id="00C795C0" group="OBJECTGROUP.DISPLAY" type="OBJ_LED" version="1.0" positionX="712" positionY="491" width="72" height="53">
+			<input>
+				<port id="00C792C0"/>
+			</input>
+			<output>
+			</output>
+		</object>
+		<object id="00C790E0" group="OBJECTGROUP.DISPLAY" type="OBJ_LED" version="1.0" positionX="771" positionY="532" width="72" height="53">
+			<input>
+				<port id="00C7ABC0"/>
+			</input>
+			<output>
+			</output>
+		</object>
+		<object id="00C7B8B0" group="OBJECTGROUP.DISPLAY" type="Numeric-Display" version="1.0" positionX="456" positionY="645" width="140" height="196">
+			<input>
+				<port id="00C7B640"/>
+				<port id="00C7B590"/>
+				<port id="00C7B4E0"/>
+				<port id="00C7B430"/>
+			</input>
+			<output>
+			</output>
+		</object>
+		<object id="00C7CBB0" group="OBJECTGROUP.DISPLAY" type="Numeric-Display" version="1.0" positionX="447" positionY="37" width="140" height="196">
+			<input>
+				<port id="00C7C940"/>
+				<port id="00C7C890"/>
+				<port id="00C7C7E0"/>
+				<port id="00C7C730"/>
+			</input>
+			<output>
+			</output>
+		</object>
+	</objects>
+	<links>
+		<link id="00C77C20" port1="00C76EC0" port2="00C76060">
+			<point positionX="450" positionY="275"/>
+			<point positionX="429" positionY="275"/>
+			<point positionX="429" positionY="257"/>
+			<point positionX="246" positionY="257"/>
+		</link>
+		<link id="00C779C0" port1="00C76E10" port2="00C77F70">
+			<point positionX="450" positionY="315"/>
+			<point positionX="407" positionY="315"/>
+			<point positionX="407" positionY="289"/>
+			<point positionX="246" positionY="289"/>
+		</link>
+		<link id="00C77760" port1="00C76CB0" port2="00C77EC0">
+			<point positionX="450" positionY="355"/>
+			<point positionX="385" positionY="355"/>
+			<point positionX="385" positionY="321"/>
+			<point positionX="246" positionY="321"/>
+		</link>
+		<link id="00C77500" port1="00C76C00" port2="00C77E10">
+			<point positionX="450" positionY="395"/>
+			<point positionX="360" positionY="395"/>
+			<point positionX="360" positionY="353"/>
+			<point positionX="246" positionY="353"/>
+		</link>
+		<link id="00C68CA0" port1="00C76B50" port2="00C3E5D0">
+			<point positionX="450" positionY="475"/>
+			<point positionX="360" positionY="475"/>
+			<point positionX="360" positionY="534"/>
+			<point positionX="246" positionY="534"/>
+		</link>
+		<link id="00C660A0" port1="00C76AA0" port2="00C3EED0">
+			<point positionX="450" positionY="515"/>
+			<point positionX="388" positionY="515"/>
+			<point positionX="388" positionY="566"/>
+			<point positionX="246" positionY="566"/>
+		</link>
+		<link id="00C78F70" port1="00C769F0" port2="00C3D3E0">
+			<point positionX="450" positionY="555"/>
+			<point positionX="413" positionY="555"/>
+			<point positionX="413" positionY="598"/>
+			<point positionX="246" positionY="598"/>
+		</link>
+		<link id="00C78D10" port1="00C76940" port2="00C3D330">
+			<point positionX="450" positionY="595"/>
+			<point positionX="434" positionY="595"/>
+			<point positionX="434" positionY="630"/>
+			<point positionX="246" positionY="630"/>
+		</link>
+		<link id="00C7AA30" port1="00C78670" port2="00C76D60">
+			<point positionX="770" positionY="316"/>
+			<point positionX="745" positionY="316"/>
+			<point positionX="745" positionY="315"/>
+			<point positionX="689" positionY="315"/>
+		</link>
+		<link id="00C7A820" port1="00C78160" port2="00C76890">
+			<point positionX="705" positionY="354"/>
+			<point positionX="702" positionY="354"/>
+			<point positionX="702" positionY="355"/>
+			<point positionX="689" positionY="355"/>
+		</link>
+		<link id="00C7A5C0" port1="00C79C80" port2="00C76730">
+			<point positionX="775" positionY="393"/>
+			<point positionX="744" positionY="393"/>
+			<point positionX="744" positionY="395"/>
+			<point positionX="689" positionY="395"/>
+		</link>
+		<link id="00C7A360" port1="00C797A0" port2="00C76680">
+			<point positionX="771" positionY="475"/>
+			<point positionX="741" positionY="475"/>
+			<point positionX="741" positionY="475"/>
+			<point positionX="689" positionY="475"/>
+		</link>
+		<link id="00C7A050" port1="00C792C0" port2="00C765D0">
+			<point positionX="712" positionY="516"/>
+			<point positionX="702" positionY="516"/>
+			<point positionX="702" positionY="515"/>
+			<point positionX="689" positionY="515"/>
+		</link>
+		<link id="00C7BDC0" port1="00C7ABC0" port2="00C76520">
+			<point positionX="771" positionY="557"/>
+			<point positionX="741" positionY="557"/>
+			<point positionX="741" positionY="555"/>
+			<point positionX="689" positionY="555"/>
+		</link>
+		<link id="00C7B280" port1="00C7B430" port2="00C3D330">
+			<point positionX="456" positionY="772"/>
+			<point positionX="275" positionY="772"/>
+			<point positionX="275" positionY="630"/>
+			<point positionX="246" positionY="630"/>
+		</link>
+		<link id="00C7B120" port1="00C7B4E0" port2="00C3D3E0">
+			<point positionX="456" positionY="740"/>
+			<point positionX="303" positionY="740"/>
+			<point positionX="303" positionY="598"/>
+			<point positionX="246" positionY="598"/>
+		</link>
+		<link id="00C7CEC0" port1="00C7B590" port2="00C3EED0">
+			<point positionX="456" positionY="708"/>
+			<point positionX="332" positionY="708"/>
+			<point positionX="332" positionY="566"/>
+			<point positionX="246" positionY="566"/>
+		</link>
+		<link id="00C7CD60" port1="00C7B640" port2="00C3E5D0">
+			<point positionX="456" positionY="676"/>
+			<point positionX="360" positionY="676"/>
+			<point positionX="360" positionY="534"/>
+			<point positionX="246" positionY="534"/>
+		</link>
+		<link id="00C7C4D0" port1="00C7C940" port2="00C76060">
+			<point positionX="447" positionY="68"/>
+			<point positionX="275" positionY="68"/>
+			<point positionX="275" positionY="257"/>
+			<point positionX="246" positionY="257"/>
+		</link>
+		<link id="00C7C370" port1="00C7C890" port2="00C77F70">
+			<point positionX="447" positionY="100"/>
+			<point positionX="300" positionY="100"/>
+			<point positionX="300" positionY="289"/>
+			<point positionX="246" positionY="289"/>
+		</link>
+		<link id="00C7C1C0" port1="00C7C7E0" port2="00C77EC0">
+			<point positionX="447" positionY="132"/>
+			<point positionX="331" positionY="132"/>
+			<point positionX="331" positionY="321"/>
+			<point positionX="246" positionY="321"/>
+		</link>
+		<link id="00C7DF70" port1="00C7C730" port2="00C77E10">
+			<point positionX="447" positionY="164"/>
+			<point positionX="359" positionY="164"/>
+			<point positionX="359" positionY="353"/>
+			<point positionX="246" positionY="353"/>
+		</link>
+	</links>
+</circuit>

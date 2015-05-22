@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ModulBus_compuLAB - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Release/Modulbus_compuLAB/ModulBus_compuLAB.res" /i "sources\Plugins\DLL\SerialPort\ModulBus_compuLAB" /d "NDEBUG" /d "_AFXDLL" "C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\ModulBus_compuLAB\ModulBus_compuLAB.rc"" 
+Creating temporary file "C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP372.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDLL" /D "_AFXDLL" /Fp"Release/Modulbus_compuLAB/ModulBus_compuLAB.pch" /YX /Fo"Release/Modulbus_compuLAB/" /Fd"Release/Modulbus_compuLAB/" /FD /c 
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\ModulBus_compuLAB\DialogOption.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\SerialPort.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\ModulBus_compuLAB\SerialPortContext.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\StdAfx.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\SysColorStatic.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP372.tmp" 
+Creating temporary file "C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP373.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/Modulbus_compuLAB/ModulBus_compuLAB.pdb" /machine:I386 /out:"bin\plugins\ModulBus_compuLAB.dll" /implib:"Release/Modulbus_compuLAB/ModulBus_compuLAB.lib" 
+.\Release\Modulbus_compuLAB\DialogOption.obj
+.\Release\Modulbus_compuLAB\ModulBus_compuLAB.res
+.\Release\Modulbus_compuLAB\SerialPort.obj
+.\Release\Modulbus_compuLAB\SerialPortContext.obj
+.\Release\Modulbus_compuLAB\StdAfx.obj
+.\Release\Modulbus_compuLAB\SysColorStatic.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP373.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+DialogOption.cpp
+SerialPort.cpp
+SerialPortContext.cpp
+StdAfx.cpp
+SysColorStatic.cpp
+Linking...
+   Creating library Release/Modulbus_compuLAB/ModulBus_compuLAB.lib and object Release/Modulbus_compuLAB/ModulBus_compuLAB.exp
+
+
+
+<h3>Results</h3>
+ModulBus_compuLAB.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

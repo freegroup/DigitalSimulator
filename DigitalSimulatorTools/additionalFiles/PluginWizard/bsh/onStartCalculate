@@ -1,0 +1,15 @@
+// this method will be called if the calcualtion start
+//
+// Note: start the TraceWin.exe to see this message
+//
+
+/*
+to expensive for the produktive system. Use tracing only during the
+development.
+
+import de.freegroup.digitalsimulator.*;
+
+Trace.info("start of the calculation of the object ["+name+"]");
+*/
+
+return;

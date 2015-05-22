@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: hps_LapLine1620 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x407 /fo"Release/hps_lapline/hps_LapLine1620.res" /i "sources\Plugins\DLL\SerialPort\hps_LapLine1620" /d "NDEBUG" /d "_AFXDLL" "C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\hps_LapLine1620\hps_LapLine1620.rc"" 
+Creating temporary file "C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP44D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDLL" /D "_AFXDLL" /Fp"Release/hps_lapline/hps_LapLine1620.pch" /YX /Fo"Release/hps_lapline/" /Fd"Release/hps_lapline/" /FD /c 
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\hps_LapLine1620\DialogOption.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\hps_LapLine1620\SerialPort.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\hps_LapLine1620\SerialPortContext.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\StdAfx.cpp"
+"C:\Users\herz\Projects\DigitalSimulator\sources\Plugins\DLL\SerialPort\SysColorStatic.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP44D.tmp" 
+Creating temporary file "C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP44E.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:no /pdb:"Release/hps_lapline/hps_LapLine1620.pdb" /machine:I386 /out:"bin\plugins\hps_LapLine1620.dll" /implib:"Release/hps_lapline/hps_LapLine1620.lib" 
+.\Release\hps_lapline\DialogOption.obj
+.\Release\hps_lapline\SerialPort.obj
+.\Release\hps_lapline\SerialPortContext.obj
+.\Release\hps_lapline\StdAfx.obj
+.\Release\hps_lapline\SysColorStatic.obj
+.\Release\hps_lapline\hps_LapLine1620.res
+]
+Creating command line "link.exe @C:\DOCUME~1\c5026971\LOCALS~1\Temp\RSP44E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+DialogOption.cpp
+SerialPort.cpp
+SerialPortContext.cpp
+StdAfx.cpp
+SysColorStatic.cpp
+Linking...
+   Creating library Release/hps_lapline/hps_LapLine1620.lib and object Release/hps_lapline/hps_LapLine1620.exp
+
+
+
+<h3>Results</h3>
+hps_LapLine1620.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

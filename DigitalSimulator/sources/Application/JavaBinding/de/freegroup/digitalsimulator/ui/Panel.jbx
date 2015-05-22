@@ -1,0 +1,9 @@
+[PropertyInfo]
+image,Image,false,false, , ,false,<default>
+opaque,boolean,false,false, , ,true,<default>
+texture,Image,false,false, , ,true,<default>
+[IconNames]
+
+
+
+

@@ -1,0 +1,24 @@
+REGEDIT
+;   Diese .REG-Datei kann von Ihrem SETUP-Programm verwendet werden.
+;   Falls kein SETUP-Programm verfügbar ist, werden die unten stehenden Einträge
+;   automatisch in InitInstance registriert, mit einem Aufruf an 
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\DigitalTraineeStudio.Document = Digita Document
+HKEY_CLASSES_ROOT\DigitalTraineeStudio.Document\protocol\StdFileEditing\server = DIGITALTRAINEESTUDIO.EXE
+HKEY_CLASSES_ROOT\DigitalTraineeStudio.Document\protocol\StdFileEditing\verb\0 = &Edit
+HKEY_CLASSES_ROOT\DigitalTraineeStudio.Document\Insertable =
+HKEY_CLASSES_ROOT\DigitalTraineeStudio.Document\CLSID = {94F3F5E1-6114-11D2-890F-004F49031E0C}
+
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C} = Digita Document
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\DefaultIcon = DIGITALTRAINEESTUDIO.EXE,1
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\LocalServer32 = DIGITALTRAINEESTUDIO.EXE
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\ProgId = DigitalTraineeStudio.Document
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\MiscStatus = 32
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\AuxUserType\3 = DigitalTraineeStudio
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\AuxUserType\2 = Digita
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\Insertable = 
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\verb\1 = &Öffnen,0,2
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\verb\0 = &Bearbeiten,0,2
+HKEY_CLASSES_ROOT\CLSID\{94F3F5E1-6114-11D2-890F-004F49031E0C}\InprocHandler32 = ole32.dll
